@@ -16,6 +16,10 @@
 
 # COMMAND ----------
 
+# MAGIC %pip install -r python-dotenv
+
+# COMMAND ----------
+
 # DBTITLE 1,Set env
 dbutils.widgets.dropdown('env', 'dev', ['dev', 'staging', 'prod'], 'Environment Name')
 
